@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utility.ListenerClass"/>
+  </listeners>
+  <test name="testngTest(failed)">
+    <classes>
+      <class name="tests.Carpeesh_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setUp"/>
+          <include name="carpeesh"/>
+        </methods>
+      </class> <!-- tests.Carpeesh_Test -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
