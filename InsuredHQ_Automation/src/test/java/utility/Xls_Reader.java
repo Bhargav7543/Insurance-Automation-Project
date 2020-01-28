@@ -98,7 +98,7 @@ public class Xls_Reader {
 			// return cell.getStringCellValue();
 			else if ((cell.getCellType().name().equals("NUMERIC")) || (cell.getCellType().name().equals("FORMULA"))) {
 
-				String cellText = String.valueOf(cell.getNumericCellValue());
+				String cellText = String.valueOf((int)cell.getNumericCellValue());
 				if (HSSFDateUtil.isCellDateFormatted(cell)) {
 					// format in form of M/D/YY
 					double d = cell.getNumericCellValue();
